@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="title here..."
+        android:id="@+id/serchtext"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:text="search"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gobtn"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recview"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Loading..."
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/loadingtext"
+        android:visibility="gone"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
